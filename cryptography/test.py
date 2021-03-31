@@ -32,9 +32,19 @@ def cryptography(d_e_code,e_text,key):
 while True:
     print(art)
     decode_encode = input("do you want to encode or decode: ")
-    while decode_encode != 'encode' and decode_encode != 'decode':
-        decode_encode = input("error: please typee encode to encode and decode to decode ")
-    enter_text = input("enter text: ")
+    try:
+        
+        if decode_encode == 'encode' and decode_encode == 'decode':
+          continue
+          
+          
+    except ValueError:
+        print('please type use \'encode\' to encode and \'decode\' to decode ')
+        # else:
+        #     break
+        
+            # decode_encode = input("Error:")
+    # enter_text = input("enter text: ")
     enter_key = input('enter key: ')
     if enter_key == "":
         enter_key = 0
