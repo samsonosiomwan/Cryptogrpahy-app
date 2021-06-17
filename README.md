@@ -1,14 +1,14 @@
-# ASSESSMENTS
+# Cryptography Command Line Program
 
 ## Exercise 1 (Cryptography)
 
 Cryptography is a method of protecting information and communications through the use of cypher or codes so that only those for whom the information is intended can read and process it. This involves both encryption and decryption of information. [Read more →](https://searchsecurity.techtarget.com/definition/cryptography)
 
-### For Context
+### Description
 
-You are to write a simple command-line program that encrypts and decrypts English alphabet letters using an integer as an encryption/decryption key.
+This is a simple command-line program that encrypts and decrypts English alphabet letters using an integer as an encryption/decryption key.
 
-Your program should be able to:
+This program can perform the following operations:
 
 - Encrypt → convert information (plaintext) into a secret code (ciphertext)
 - Decrypt → convert secret code (ciphertext) into information (plaintext)
@@ -20,10 +20,11 @@ Your program should be able to:
   - decrypt “efgh” with the decryption key of “5” should return “abcd”
   - decrypt  “abcd” with the decryption key of “1” should return “zabc”
 
-### Program Expectations
+### How it Works
 
 Your program is expected to behave in the following ways
 
+- Clone repo and run this program
 - Prompt user either she wants to encode (encrypt) or decode (decrypt)
 - Prompt user to insert the plaintext to encode or ciphertext to decode
 - Prompt user to insert the encryption/decryption key which must be an integer
@@ -38,20 +39,18 @@ Your program is expected to behave in the following ways
 
 ### Constraints
 
-The followings are the constraints that your program should adhere to:
+- This program only encrypt or decrypt lowercased alphabet characters. Other characters should remain the same
+- If no encryption/decryption key is provided the program defaults to zero
 
-- Your program should only encrypt or decrypt lowercased alphabet characters. Other characters should remain the same
-- If no encryption/decryption key is provided default to zero
-- Make sure all necessary exception is caught
 
-## Exercise 2 (Dict Comprehension)
+## Knowledge test Implementation (Dict Comprehension)
 
-Write a function named `dict_comp` that takes in two integer values `stop` and `step` as arguments and returns a dictionary generated using python comprehensions, which will have string keys in the format `"items-#"` and values of type `list`, where each list is of length `step` and contains only integers. 
+in this programe a function named `dict_comp` that takes in two integer values `stop` and `step` as arguments and returns a dictionary generated using python comprehensions is included, it has string string keys in the format `"items-#"` and values of type `list`, where each list is of length `step` and contains only integers. 
 
 The integers within the list values will be sequentially generated, such that integers in a second list is a continuation of those in the first list and so on for others until we get to `stop` 
 
 ```python
-# Example output dictionary given that : stop = 10 and step = 4 
+# Expected output dictionary given that : stop = 10 and step = 4 
 
 {
    "items-1": [ 1, 2, 3, 4 ],
@@ -59,11 +58,3 @@ The integers within the list values will be sequentially generated, such that in
 }
 
 ```
-
-Notice in the example above, the first list starts from 1 and not 0 and that the remaining integers `9 & 10` were discarded since they are not up to 4 integers to make up another entry in the dictionary.
-
-### Approach
-
-- Fully Understands the program expectation before you start writing code
-- Ask timely and appropriate questions where necessary
-- Break down the large task into a little chunk of work
