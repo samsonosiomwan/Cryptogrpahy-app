@@ -1,7 +1,4 @@
-
-
 #dict_comp function to accept step,stop arguments and return a dictionary using comprehension
-
 def dict_comp(stop,step):
     pass
     '''input integer_____for step,stop'''

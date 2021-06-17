@@ -62,6 +62,3 @@ while True:
         continue
     elif yes_no == 'no':
         break
-
-  
-# cryptography()
